@@ -18,6 +18,8 @@ export class HomeComponent implements OnInit {
     this.userService.getData()
       .subscribe((data: any[]) => {
         this.nonAdminUsers = data
+      }, (error) => {
+        console.log('Log the error' + error);
       });
   }
 
