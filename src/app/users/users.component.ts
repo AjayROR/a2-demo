@@ -21,7 +21,7 @@ export class UsersComponent implements OnInit {
 
   refresh() {
     this.users.push({
-      id: 3, name: '3333', age: 12
+      id: 3, title: 'Ruby Article', body: ' this is a ruby article. lets learn.'
     });
   }
 
