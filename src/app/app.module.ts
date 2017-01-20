@@ -10,12 +10,14 @@ import { HomeComponent } from './home/home.component';
 import { appRoutes } from './app.routes';
 import { UsersComponent } from './users/users.component';
 import { UserService } from './services/user.service';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    UsersComponent
+    UsersComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
