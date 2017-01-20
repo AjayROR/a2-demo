@@ -14,7 +14,11 @@ export class HomeComponent implements OnInit {
   constructor(public userService: UserService) {}
 
   ngOnInit() {
-    this.nonAdminUsers = this.userService.getData();
+    this.nonAdminUsers= [];
+    this.userService.getData()
+      .subscribe((data: any[]) => {
+        this.nonAdminUsers = data
+      });
   }
 
 }
